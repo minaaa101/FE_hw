@@ -1,0 +1,97 @@
+body {
+    background-color: #fff5eb;
+    font-size: 1.5w;
+    margin: 0;
+    padding:0;
+}
+
+.back {
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.tittle {
+    background-color: #ffcdcd;
+    display: inline-block; 
+    width: 70%;
+    height: 80px;
+    border-radius: 10px; 
+    text-align: center;
+    line-height: 80px;
+    font-size: 2vw;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:30px;
+    margin: 20px 5vw;
+}
+.aside {
+    background-color: #ffcdcd;
+    flex-basis: 30%;
+    height: auto;
+    padding: 30px;
+    flex-shrink: 0;
+    font-size: 1.2vw;
+    margin-left: 15vw;
+}
+
+.left {
+    text-align: center;
+    margin-left: 15vw;
+}
+
+#circle {
+    width: 150px;
+    height: 150px;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-image: url('img/증명사진.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.under {
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+    gap: 30px;
+    padding: 30px;
+    text-align: center;
+    align-items: stretch;
+    justify-content: center;
+    margin-right: 15vw;
+}
+
+.article {
+    position: relative;
+    background-color: #ffe4e1;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.3vw;
+}
+
+
+.info {
+    position: relative; 
+    padding: 20px;
+    margin-top: 30px; 
+    background-color: #ffe4e1;
+    border-radius: 10%;
+    line-height: 2;
+    font-size: 1.2vw;
+}
+
+.info h1 {
+    font-size: 2.5vw;
+    margin-bottom: 15px;
+}
