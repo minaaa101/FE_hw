@@ -1,26 +1,39 @@
 JS TEST
 
-1. 2번
-2.search
-3. num%2===0
-4.3000
-5. push
-6.click
-7. const lion = ( ) => {
+// ✨ 맞은 개수: 4
+// 📌 총점 : 4/15
+
+1. 2번 // O
+
+2.search // X
+
+3. num%2===0 // O
+
+4.3000 // O
+
+5. push // X
+
+6.click // X
+
+7. // O
+	const lion = ( ) => {
 	console.log("자바스크립트 마스터를 해보자!");
 	};
 
-	lion();
+	lion(); 
 
-8. const isLogin = true ? "환영합니다!" : false ? "접근 권한이 없습니다.";
+8. // X
+const isLogin = true ? "환영합니다!" : false ? "접근 권한이 없습니다.";
 prompt(isLogin);
 
-9.  	do {
+9. // X
+  do {
 		const name = prompt(" 무엇을 말하고 싶나요?","끝");
 
-	}while ( name === "끝")
+	}while ( name === "끝")	
 
-10. 	let i = 0;
+10. // X 
+	let i = 0;
 	let sum = 0;
 
 	const num = prompt("숫자를 입력하시오","10");
@@ -29,7 +42,8 @@ prompt(isLogin);
 	}
 	alert(sum);
 
-11. let arr = new Array;
+11. // X
+	let arr = new Array;
 	let arr = [];
 	let sum = 0;
 
