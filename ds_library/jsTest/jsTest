@@ -1,0 +1,44 @@
+JS TEST
+
+1. 2번
+2.search
+3. num%2===0
+4.3000
+5. push
+6.click
+7. const lion = ( ) => {
+	console.log("자바스크립트 마스터를 해보자!");
+	};
+
+	lion();
+
+8. const isLogin = true ? "환영합니다!" : false ? "접근 권한이 없습니다.";
+prompt(isLogin);
+
+9.  	do {
+		const name = prompt(" 무엇을 말하고 싶나요?","끝");
+
+	}while ( name === "끝")
+
+10. 	let i = 0;
+	let sum = 0;
+
+	const num = prompt("숫자를 입력하시오","10");
+	while ( i <=num){
+		sum += i;
+	}
+	alert(sum);
+
+11. let arr = new Array;
+	let arr = [];
+	let sum = 0;
+
+	function m(){
+		for (let i = 0; i<3; i++)
+        {
+			arr[i] =Math.floor(Math.random() *11);
+			console.log( i+1 +"번째 랜덤 난수: " + arr[i]);
+			sum += i;
+		}
+    }
+    m();
