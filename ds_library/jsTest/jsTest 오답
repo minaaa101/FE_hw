@@ -1,0 +1,202 @@
+JS TEST
+
+// ✨ 맞은 개수: 4
+// 📌 총점 : 4/15
+
+1. 2번 // O
+
+2.search // X
+/* 답) includes
+		includes는 배열에 특정 요소 포함 여부를 확인하는 메서서드이며 
+		search는 문자열에서 처음 일치하는 위치를 반환한다.
+		따라서 배열에서 사용하면 오류가 발생한다. */
+
+3. num%2===0 // O
+
+4.3000 // O
+
+5. push // X
+/*답) appendChild
+		appendChild는 자식 요소로 추가하는 메서드다.
+		push는 배열의 요소를 추가하는 메서드로 오류가 발생한다. */
+
+6.click // X
+	/
+
+7. // O
+	const lion = ( ) => {
+	console.log("자바스크립트 마스터를 해보자!");
+	};
+
+	lion(); 
+
+8. // X
+const isLogin = true ? "환영합니다!" : false ? "접근 권한이 없습니다.";
+prompt(isLogin);
+
+/*답) const isLogin = true;
+		alert(isLogin = true ? "환영합니다!" : "접근 권한이 없습니다.");
+		prompt는 입력, alert는 단순히 팝업창을 띄우는 용도이므로 여기서는 alert이 더 적합하다.
+		삼중 연산자에서 true/false 이외에 다른 것을 생각할 필요가 없으며 : flase를 사용할 필요가 없다.
+		)가 사라졌다... */
+
+9. // X
+	do {
+		const name = prompt(" 무엇을 말하고 싶나요?","끝");
+
+	}while ( name === "끝")	
+
+/*답 ) 
+	let name;
+
+	do {
+		name = prompt(" 무엇을 말하고 싶나요?","끝");
+
+	}while ( name === "끝");
+
+	우선 do-while문 안에 name을 선언하게 되면  { } 안에서만 name이 존재하게 된다.
+	즉, while의 조건문 안에 들어갈 name이 정의되지 않는다.
+	while 뒤에 ; 이 빠졌다... */
+
+10. // X 
+	let i = 0;
+	let sum = 0;
+
+	const num = prompt("숫자를 입력하시오","10");
+	while ( i <=num){
+		sum += i;
+	}
+	alert(sum);
+
+/*답 )
+	let i =0;
+	let sum =0;
+
+	const num = Number(prompt("숫자를 입력하시오"," 10"));
+	while (i <= num){
+		sum +=i;
+		i++;
+	}
+	alert("1부터 해당값까지의 합은" + sum +"입니다.");
+
+	const num으로 받으면 num은 String이 된다. 이러한 String을 바꾸기 위해
+	num을 Number을 활용하여 숫자로 받도록 한다.
+	while 속의 i++가 빠져 무한루프롤 돌았다. */
+
+11. // X
+	let arr = new Array;
+	let arr = [];
+	let sum = 0;
+
+	function m() {
+		for (let i = 0; i < 3; i++)
+		{
+			arr[i] = Math.floor(Math.random() *11);
+			document.write( (i+1) +"번째 랜덤 난수: " + arr[i]);
+			sum += i;
+		}
+    }
+    m();
+
+/* 답)
+	const A = {
+		arr : [],
+		sum : 0,
+
+		B: function () {
+			for (let i = 0; i < 3; i++)
+			{
+				this.arr[i] = Math.floor(Math.random() *11);
+				document.write( `${i+1} 번째 랜덤 난수: ${this.arr[i]}`);
+				this.sum += this.arr[i];
+			}
+			document.write("3개의 합:" + this.sum);
+		}
+	};
+
+	A.B();
+	
+	"let arr = new Array; let arr = [];" 이 부분은 배열을 중복 선언하여 오류가 발생한다.
+	sum에 i가 아닌 배열을 더해야한다...
+	마지막에 3개의 합을 더하는 부분을 console.log로 만들지 않았다. */
+
+//여기서부터는 답안을 작성하지 못했습니다.
+
+12. 
+답 )
+
+	const arr = {
+	arr1: ["빨강", "주황", "노랑", "초록"],
+	arr2: ["파랑", "남색", "보라", "핑크"],
+
+	M: function () {
+
+		let newArr = [];
+
+		for (let i = 0; i < this.arr1.length; i++) {
+			newArr.push(this.arr1[i]);
+			}
+		for (let i = 0; i < this.arr2.length; i++) {
+			newArr.push(this.arr2[i]);
+			}
+		console.log(`(${newArr.length})`, newArr); 
+
+		console.log("노랑:", newArr[2]);
+
+		for (let i = 0; i < 3; i++) {
+		newArr.shift();
+		}
+
+		console.log(`(${newArr.length})`, combined);
+		}
+	};
+
+arr.M();
+
+13.
+답 )
+	let date1 = new Date();
+
+	date1.setFullYear(2025);
+	date1.setMonth(4);
+	date1.setDate(2);
+	console.log(date1.toLocaleDateString("ko-KR", {year: "numeric",
+	month: "long",
+	day: "numeric" });
+
+	let now = new Date();
+	let nowD = now.toLocaleDateString("ko-KR",{year: "numeric",
+	month: "long",
+	day: "numeric" });
+
+	document.write("오늘 날짜: "+ nowD);
+	
+	let diffTime = now.getTime() - date1.getTime();
+	let diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+
+	document.write(`2025년 5월 2일로부터 ${diffDays}일이 지났습니다.`);
+
+14.
+답)
+
+
+	let count = 1;
+
+const change = () => {
+    const span = document.getElementById("name");
+    count++;
+    span.innerText = `likelion_${count}`;
+};
+
+15.
+답)
+	const person = {
+		name : prompt("이름을 입력하세요"),
+		age : prompt("나이를 입력하세요"),
+
+		key: function () {
+			alert(`안녕, ${this.age}살 ${this.name}` );
+		}
+	}
+	
+	person.key();
