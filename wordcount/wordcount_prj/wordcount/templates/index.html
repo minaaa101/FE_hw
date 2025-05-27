@@ -1,0 +1,5 @@
+{% extends "base.html" %} {% load static %}{% block title %} index page{% endblock %}
+{% block body %}
+    <h1>오늘은 장고 기초 세션하는 날 ~~ 🎉</h1>
+    <a href= "{% url 'word_count' %}">word_count로 가기</a>
+{% endblock %}
