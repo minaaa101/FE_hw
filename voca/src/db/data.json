@@ -1,0 +1,43 @@
+{
+  "days": [
+    {
+      "id": "1",
+      "day": 1
+    },
+    {
+      "id": "2",
+      "day": 2
+    },
+    {
+      "id": "b976",
+      "day": 3
+    },
+    {
+      "id": "2779",
+      "day": 4
+    }
+  ],
+  "words": [
+    {
+      "id": "c6e4",
+      "day": "1",
+      "eng": "Hello",
+      "kor": "안녕",
+      "isDone": false
+    },
+    {
+      "id": "fa1e",
+      "day": "1",
+      "eng": "new",
+      "kor": "새로운",
+      "isDone": false
+    },
+    {
+      "id": "8638",
+      "day": "3",
+      "eng": "Lion",
+      "kor": "사자",
+      "isDone": false
+    }
+  ]
+}
